@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <Filmes/>
+    <main-wrapper/>
   </div>
 </template>
 
 <script>
-import Filmes from './components/Filmes.vue'
+import MainWrapper from './components/MainWrapper.vue'
 
 export default {
   name: 'app',
   components: {
-    Filmes
+    MainWrapper
   }
 }
 </script>
