@@ -1,11 +1,11 @@
 <template>
 <div id='dashboard' class='container'>
     <h1 class='titulo'>ANSWER ME</h1>
-    <div class='row justify-content-md-center'>
-        <div class='col col-lg-2'>
+    <div class='row justify-content-md-center botoes'>
+        <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buttonnew">Novo Jogo</button>
         </div>
-        <div class='col col-lg-2'>
+        <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buutonadd">Adicionar Amigo</button>
         </div>
     </div>
@@ -25,6 +25,8 @@ export default {
 
 h1 {
     font-family: 'BD_Cartoon_Shout' !important;
+    font-size: 3em;
+    display: inline;
 }
 
 .buttonnew, .buutonadd{
@@ -34,6 +36,10 @@ h1 {
 
 .titulo{
     margin-bottom: 50px;
+}
+
+.botoes{
+    margin-top: 20vh;
 }
 
 </style>

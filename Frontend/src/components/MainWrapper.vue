@@ -22,7 +22,7 @@ export default {
 <style scoped>
 
 #main-wrapper, .container{
-    height: 100vh;
+    height: 80vh;
 }
 
 .Footer{
