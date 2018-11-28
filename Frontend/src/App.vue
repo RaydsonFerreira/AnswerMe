@@ -18,7 +18,11 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  @font-face {
+     font-family: 'BD_Cartoon_Shout';
+     src: url('assets/fonts/BD_Cartoon_Shout.ttf') format('ttf');
+  }
+  font-family: 'BD_Cartoon_Shout', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,38 +1,35 @@
-<template lang='pug'>
-#main-wrapper
-  el-container
-    Filmes
+<template>
+<div id='main-wrapper'>
+    <div class='container'>
+        <dashboard></dashboard>
 
-    .Footer
-    | © 2018 - Answer Me
-
+        <div class='Footer'>© 2018 - Answer Me</div>
+    </div>
+</div>
 </template>
 
 <script>
-import Filmes from './Filmes'
+import Dashboard from './Dashboard'
 export default {
   name: 'MainWrapper',
-  components: { Filmes },
+  components: { Dashboard },
 
   methods: {
   }
 }
 </script>
 
-<style lang='sass' scoped>
+<style scoped>
 
-  #main-wrapper, .el-container
-    height: 100vh
+#main-wrapper, .container{
+    height: 100vh;
+}
 
-  .Footer
-    text-align: center
-    justify-content: center
-    padding: 35px
-    padding-bottom: 0px
-
-  /deep/ .el-header
-    padding: 0
-    z-index: 1000
-    overflow-x: auto
+.Footer{
+    text-align: center;
+    justify-content: center;
+    padding: 35px;
+    padding-bottom: 0px;
+}
 
 </style>

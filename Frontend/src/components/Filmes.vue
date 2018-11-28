@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id='filmes'>
     <h1>Busque os seus Filmes Favoritos</h1>
     <div class='container areaBusca'>
       <b-input-group>
