@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Dashboard from '@/components/Dashboard'
 import Login from '@/components/Login'
 import Registro from '@/components/Registro'
+import Jogo from '@/components/Jogo'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/registro',
       name: 'registro',
       component: Registro
+    },
+    {
+      path: '/jogo',
+      name: 'jogo',
+      component: Jogo
     },
     {
       path: '/',

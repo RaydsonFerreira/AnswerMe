@@ -27,7 +27,7 @@
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
 export default {
-  name: 'MainWrapper',
+  name: 'Registro',
   mixins: [RouterMixin],
 
   data () {
@@ -41,7 +41,8 @@ export default {
 
   methods: {
     registrar () {
-        if (this.nome !== '' && this.username !== '' && this.senha !== '' && this.confirmacaoSenha !== '') {
+        console.log(this.nome, this.username, this.senha, this.confirmacaoSenha)
+        if (!this.nome && !this.username && !this.senha && !this.confirmacaoSenha) {
             alert('preencha os campos')
         } else if(this.senha !== this.confirmacaoSenha) {
             alert('senhas não conferem! digite novamente')

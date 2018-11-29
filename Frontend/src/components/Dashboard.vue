@@ -4,7 +4,7 @@
     <h2>bem-vindo</h2>
     <div class='row justify-content-md-center botoes'>
         <div class='col col-lg-3'>
-            <button type="button" class="btn btn-outline-warning buttonnew" @click="irlogin">Novo Jogo</button>
+            <button type="button" class="btn btn-outline-warning buttonnew" @click="iniciarJogo">Novo Jogo</button>
         </div>
         <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buutonadd">Adicionar Amigo</button>
@@ -18,8 +18,8 @@ export default {
     name: 'dashboard',
     mixins: [RouterMixin],
     methods: {
-        irlogin () {
-
+        iniciarJogo () {
+            this.goTo('jogo')
         }
     }
     
