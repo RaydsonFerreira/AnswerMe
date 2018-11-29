@@ -1,9 +1,10 @@
 <template>
 <div id='dashboard' class='container'>
     <h1 class='titulo'>ANSWER ME</h1>
+    <h2>bem-vindo</h2>
     <div class='row justify-content-md-center botoes'>
         <div class='col col-lg-3'>
-            <button type="button" class="btn btn-outline-warning buttonnew">Novo Jogo</button>
+            <button type="button" class="btn btn-outline-warning buttonnew" @click="irlogin">Novo Jogo</button>
         </div>
         <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buutonadd">Adicionar Amigo</button>
@@ -12,7 +13,15 @@
 </div>    
 </template>
 <script>
+import RouterMixin from '@/utils/mixins/RouterMixin'
 export default {
+    name: 'dashboard',
+    mixins: [RouterMixin],
+    methods: {
+        irlogin () {
+
+        }
+    }
     
 }
 </script>
@@ -39,7 +48,7 @@ h1 {
 }
 
 .botoes{
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 </style>

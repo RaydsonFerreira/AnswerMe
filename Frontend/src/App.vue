@@ -22,12 +22,19 @@ export default {
      font-family: 'BD_Cartoon_Shout';
      src: url('assets/fonts/BD_Cartoon_Shout.ttf') format('ttf');
   }
-  font-family: 'BD_Cartoon_Shout', 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'BD_Cartoon_Shout' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
   background-color: #feffff;
+}
+*{
+  font-family: 'BD_Cartoon_Shout' !important;
+}
+
+h2{
+  margin-top: 40px !important;
 }
 </style>

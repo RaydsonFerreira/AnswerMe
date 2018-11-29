@@ -1,18 +1,16 @@
 <template>
 <div id='main-wrapper'>
     <div class='container'>
-        <dashboard></dashboard>
+        <router-view></router-view>
 
-        <div class='Footer'>© 2018 - Answer Me</div>
     </div>
+    <div class='Footer'>© 2018 - Answer Me</div>
 </div>
 </template>
 
 <script>
-import Dashboard from './Dashboard'
 export default {
   name: 'MainWrapper',
-  components: { Dashboard },
 
   methods: {
   }
@@ -22,7 +20,7 @@ export default {
 <style scoped>
 
 #main-wrapper, .container{
-    height: 80vh;
+    height: 80vh !important;
 }
 
 .Footer{
