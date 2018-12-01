@@ -10,8 +10,8 @@
             <div class="form-group">
                 <input v-model="senha" type="password" class="form-control" id="InputPassword" placeholder="SENHA" required>
             </div>
-            <button type="submit" class="btn btn-outline-warning btn-entrar" @click='logar'>Entrar</button>
-            <button type="button" class="btn btn-outline-warning" @click='registrar'>Registrar-se</button>
+            <button class="btn btn-outline-warning btn-entrar" @click='logar'>Entrar</button>
+            <button class="btn btn-outline-warning" @click='registrar'>Registrar-se</button>
         </form>
 
         
@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
 h1 {
-    font-family: 'BD_Cartoon_Shout' !important;
+    font-family: 'Heroes Legend' !important;
     font-size: 3em;
     display: inline;
 }

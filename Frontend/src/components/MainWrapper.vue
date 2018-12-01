@@ -2,9 +2,8 @@
 <div id='main-wrapper'>
     <div class='container'>
         <router-view></router-view>
-
+        <div class='Footer'>© 2018 - Answer Me</div>
     </div>
-    <div class='Footer'>© 2018 - Answer Me</div>
 </div>
 </template>
 

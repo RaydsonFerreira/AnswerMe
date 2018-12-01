@@ -19,10 +19,10 @@ export default {
 <style>
 #app {
   @font-face {
-     font-family: 'BD_Cartoon_Shout';
-     src: url('assets/fonts/BD_Cartoon_Shout.ttf') format('ttf');
+     font-family: 'Heroes Legend';
+     src: url('assets/fonts/Heroes Legend.ttf') format('ttf');
   }
-  font-family: 'BD_Cartoon_Shout' !important;
+  font-family: 'Heroes Legend' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -31,8 +31,8 @@ export default {
   background-color: #feffff;
 }
 *{
-  font-family: 'BD_Cartoon_Shout' !important;
-}
+  font-family: 'Heroes Legend' !important;
+}Heroes Legend
 
 h2{
   margin-top: 40px !important;

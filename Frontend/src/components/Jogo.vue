@@ -19,15 +19,27 @@
         </div>
 
         <template>
-            <div>
+            <div class='row'>
+                <div class='col-1'>
                 <b-form-group>
                 <b-form-radio-group id="btnradios"
                                     buttons
+                                        button-variant="outline-warning"
                                     stacked
                                     v-model="selected"
                                     :options="options"
                                     name="radioBtnStacked" />
                 </b-form-group>
+            </div>
+                <div class='col-11'>
+                    <p class='reposta1 resposta'>Resposta 1</p>
+                    <p class='reposta2 resposta'>Resposta 2</p>
+                    <p class='reposta3 resposta'>Resposta 3web design, typography, layout, and printing in place of English</p>
+                    <p class='reposta4 resposta'>Resposta 4</p>
+                </div>
+            </div>
+            <div class="align-left">
+                <button class="btn btn-outline-warning" @click='responder'>Responder</button>
             </div>
         </template>
     </div>
@@ -42,7 +54,7 @@ export default {
 
   data () {
       return{
-            selected: 'radio1',
+            selected: '',
             options: [
                 { text: 'a', value: 'a' },
                 { text: 'b', value: 'b' },
@@ -53,7 +65,9 @@ export default {
   },
 
   methods: {
+      responder () {
 
+      }
   }
 }
 </script>
@@ -62,5 +76,18 @@ export default {
 /deep/ .btn 
     margin-top: 20px !important
     border-radius: 5px !important
+
+.resposta
+    margin-top: 40px
+    text-align: left
+    font-size: 0.8em
+
+.reposta1
+    margin-top: 25px !important
+
+
+.align-left
+    width: 100%
+    text-align: right
 
 </style>

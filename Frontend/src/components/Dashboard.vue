@@ -28,19 +28,19 @@ export default {
 <style>
 
 @font-face {
-    font-family: 'BD_Cartoon_Shout';
-    src: url('~@/assets/fonts/BD_Cartoon_Shout.ttf');
+    font-family: 'Heroes Legend';
+    src: url('~@/assets/fonts/Heroes Legend.ttf');
 }
 
 h1 {
-    font-family: 'BD_Cartoon_Shout' !important;
+    font-family: 'Heroes Legend' !important;
     font-size: 3em;
     display: inline;
 }
 
 .buttonnew, .buutonadd{
     width: 250px;
-    font-family: 'BD_Cartoon_Shout' !important;
+    font-family: 'Heroes Legend' !important;
 }
 
 .titulo{

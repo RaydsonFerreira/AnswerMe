@@ -41,7 +41,6 @@ export default {
 
   methods: {
     registrar () {
-        console.log(this.nome, this.username, this.senha, this.confirmacaoSenha)
         if (!this.nome && !this.username && !this.senha && !this.confirmacaoSenha) {
             alert('preencha os campos')
         } else if(this.senha !== this.confirmacaoSenha) {
@@ -58,7 +57,7 @@ export default {
 
 <style scoped>
 h1 {
-    font-family: 'BD_Cartoon_Shout' !important;
+    font-family: 'Heroes Legend' !important;
     font-size: 3em;
     display: inline;
 }
