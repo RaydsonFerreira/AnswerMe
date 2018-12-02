@@ -19,12 +19,12 @@ GET     /                                       Application.index
 GET     /usuario/{id_usuario}                   Usuarios.getUsuario
 POST    /usuario                                Usuarios.postUsuario
 
-# Organizacoes
-#GET     /organizacao/{id_organizacao}           Organizacoes.getOrganizacao
+# Perguntas
+GET     /perguntas                               Perguntas.getPerguntas
 #POST    /organizacao                            Organizacoes.postOrganizacao
 
 # Login
-POST     /login                                  Login.login
+#POST     /login                                  Login.login
 POST     /loginUser                              Login.loginUser
 #POST     /loginOrg                               Login.loginOrg
 
