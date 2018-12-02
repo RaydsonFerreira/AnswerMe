@@ -27,6 +27,8 @@ public class Usuario extends GenericModel {
 
 	@Column(name = "senha_usuario")
     public String senha;
+
+
     
     public Usuario(String nome, String username, String senha) {
     	this.nome = nome;

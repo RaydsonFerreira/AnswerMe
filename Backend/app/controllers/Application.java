@@ -13,11 +13,11 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        Usuario user = new Usuario("Raydson","ray","minhaSenha");
-        user.save();
-
-        Usuario user2 = new Usuario("Salgado","salgado","senhadele");
-        user2.save();
+//        Usuario user = new Usuario("Raydson","ray","minhaSenha");
+//        user.save();
+//
+//        Usuario user2 = new Usuario("Salgado","salgado","senhadele");
+//        user2.save();
 //
 //        Organizacao org = new Organizacao("lar dos idoso", "lar@lar", "rua das madeira, 203", "lar dos idoso de lavras", "2333423", "minhasenha");
 //        org.save();
