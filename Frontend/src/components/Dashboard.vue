@@ -7,7 +7,10 @@
             <button type="button" class="btn btn-outline-warning buttonnew" @click="iniciarJogo">Novo Jogo</button>
         </div>
         <div class='col col-lg-3'>
-            <button type="button" class="btn btn-outline-warning buutonadd">Adicionar Amigo</button>
+            <button type="button" class="btn btn-outline-warning buutonadd" @click="adicionarAmigo">Adicionar Amigo</button>
+        </div>
+	<div class='col col-lg-3'>
+            <button type="button" class="btn btn-outline-warning buutondes" @click="desempenho">Ver Desempenho</button>
         </div>
     </div>
 </div>    
@@ -20,17 +23,18 @@ export default {
     methods: {
         iniciarJogo () {
             this.goTo('jogo')
-        }
+        },
+	adicionarAmigo(){
+            this.goTo('adicionarAmigo')
+	},
+	desempenho(){
+            this.goTo('desempenho')
+	}
     }
     
 }
 </script>
 <style>
-
-@font-face {
-    font-family: 'Heroes Legend';
-    src: url('~@/assets/fonts/Heroes Legend.ttf');
-}
 
 h1 {
     font-family: 'Heroes Legend' !important;
@@ -38,9 +42,16 @@ h1 {
     display: inline;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 100px !important;
+    margin-bottom: 25px;
+}
+
 .buttonnew, .buutonadd{
     width: 250px;
-    font-family: 'Heroes Legend' !important;
+    font-family: Helvetica Neue, Helvetica, sans-serif !important;
 }
 
 .titulo{
@@ -49,6 +60,11 @@ h1 {
 
 .botoes{
     margin-top: 15vh;
+}
+
+button{
+    font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    font-weight: 600;
 }
 
 </style>

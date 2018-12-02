@@ -35,9 +35,9 @@ export default {
   methods: {
     logar () {
         if (this.username === '') {
-            alert('preencha seu username')
+            alert('Preencha seu username!')
         } else if (this.senha === '') {
-            alert('preencha a senha')
+            alert('Preencha a senha!')
         } else {
             //servico de validar o usuario
             // if serviço ok
@@ -59,6 +59,14 @@ h1 {
     display: inline;
 }
 
+h2 {
+    font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px !important;
+    margin-bottom: 25px;
+}
+
 .caixaLogin{
     width: 50vw;
 }
@@ -66,4 +74,10 @@ h1 {
 .btn-entrar{
     margin-right: 30px 
 }
+
+input,button{
+    font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    font-weight: 600;
+}
+
 </style>

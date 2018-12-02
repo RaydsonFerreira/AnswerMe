@@ -37,4 +37,9 @@ export default {
 h2{
   margin-top: 40px !important;
 }
+
+h1{
+  color: #FFC107 !important;
+}
+
 </style>
