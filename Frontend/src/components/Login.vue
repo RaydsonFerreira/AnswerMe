@@ -19,6 +19,7 @@
 
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
+import LoginService from '@/services/loginService'
 export default {
   name: 'MainWrapper',
   mixins: [RouterMixin],
@@ -37,10 +38,16 @@ export default {
         } else if (this.senha === '') {
             alert('Preencha a senha!')
         } else {
-            //servico de validar o usuario
-            // if serviço ok
-            this.goTo('dashboard')
-            //else usuario inexistente
+            let usuario = {
+                username: this.username,
+                senha: this.senha
+            }
+            LoginService.login('loginUser', usuario).then((result) => {
+                alert(result)
+                this.goTo('dashboard') 
+            }).catch(() => {
+                alert('usuario não encontrado! Cadastre-se')
+            });
         }
     },
     registrar () {

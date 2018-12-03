@@ -26,6 +26,8 @@
 
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
+import UsuarioService from '@/services/usuarioService'
+
 export default {
   name: 'Registro',
   mixins: [RouterMixin],
@@ -46,7 +48,12 @@ export default {
         } else if(this.senha !== this.confirmacaoSenha) {
             alert('Senhas não conferem! Digite novamente!')
         } else {
-            //chamr servico de registro
+            let usuario = {
+                nome: this.nome,
+                username: this.username,
+                senha: this.senha
+            }
+            UsuarioService.addUsuario('usuario', usuario)
             alert('Registro feito com sucesso!')
             this.goToLogin()
         }
