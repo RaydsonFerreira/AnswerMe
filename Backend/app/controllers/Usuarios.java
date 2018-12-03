@@ -19,6 +19,11 @@ public class Usuarios extends InternalController {
         renderJSON(findByIdSerializer.serialize(usuario));
     }
 
+    public static void getUsuarios(){
+        List<Usuario> ues = JPA.em().createNativeQuery("SELECT * from Usuario", Usuario.class).getResultList();
+        renderJSON(ues);
+    }
+
     public static void postUsuario(){
         Usuario usuario = getBody(Usuario.class);
 

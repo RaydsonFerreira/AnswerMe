@@ -25,7 +25,7 @@ public class Amigo extends GenericModel {
 
     @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "fk_id_usuario2",nullable=false)
-    public String usuario2;
+    public Usuario usuario2;
 
 
 
