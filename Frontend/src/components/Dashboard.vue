@@ -9,12 +9,21 @@
         <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buutonadd" @click="adicionarAmigo">Adicionar Amigo</button>
         </div>
-	<div class='col col-lg-3'>
+        <div class='col col-lg-3'>
             <button type="button" class="btn btn-outline-warning buttondes" @click="desempenho">Ver Desempenho</button>
+        </div>
+    </div>
+    <div class='row justify-content-md-center botoes'>
+        <div class='col col-lg-3'>
+            <button type="button" class="btn btn-outline-warning buttonsol" @click="solicitacaoAmizade">Solicitações de Amizade</button>
+        </div>
+        <div class='col col-lg-3'>
+            <button type="button" class="btn btn-outline-warning buttoncon" @click="convites">Convites de Partida</button>
         </div>
     </div>
   </div>
 </template>
+
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
 export default {
@@ -24,12 +33,18 @@ export default {
         iniciarJogo () {
             this.goTo('escolherAmigo')
         },
-	adicionarAmigo(){
+        adicionarAmigo(){
             this.goTo('adicionarAmigo')
-	},
-	desempenho(){
+        },
+        desempenho(){
             this.goTo('desempenho')
-	}
+        },
+        solicitacaoAmizade(){
+            this.goTo('solicitacaoAmizade')
+        },
+        convites(){
+            this.goTo('convites')
+        }
     }
 }
 </script>
@@ -54,7 +69,7 @@ export default {
         font-family: Helvetica Neue, Helvetica, sans-serif !important;
     }
 
-    .buttonnew, .buutonadd, .buttondes{
+    .buttonnew, .buutonadd, .buttondes, .buttonsol, .buttoncon{
         width: 250px;
         font-family: Helvetica Neue, Helvetica, sans-serif !important;
         font-weight: 600;
@@ -65,7 +80,7 @@ export default {
     }
 
     .botoes{
-        margin-top: 15vh;
+        margin-top: 40px;
     }
 
 </style>

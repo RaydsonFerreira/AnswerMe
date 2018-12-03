@@ -23,6 +23,8 @@
     </div>    
 </template>
 
+
+
 <style scoped>
     @font-face {
         font-family: 'BD_Cartoon_Shout';
@@ -30,7 +32,7 @@
     }
     h1 {
         font-family: 'BD_Cartoon_Shout' !important;
-        font-size: 3em;
+        font-size: 4em;
         display: inline;
     }
     .titulo{
@@ -39,12 +41,19 @@
     .subtitulo{
         margin-top: 40px;
         margin-bottom: 50px;
+        font-weight: 600;
     }
     .table{
         width: 700px;
     }
     .thead{
-        background-color: yellow;
+        background-color: #FFC107;
         color: black;
+    }
+    .subtitulo, th,td,button{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    }
+    button{
+        font-weight: 600;
     }
 </style>
