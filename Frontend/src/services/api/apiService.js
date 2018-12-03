@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import Cors from 'cors'
+// import Cors from 'cors'
 
 import { HttpException } from '../../utils/exceptions/http-exception'
 
@@ -9,9 +9,8 @@ import { HttpException } from '../../utils/exceptions/http-exception'
 const ApiService = {
 	init () {
 		Vue.use(VueAxios, axios)
-		Vue.use(Cors)
-		const proxyurl = ""
-		axios.defaults.baseURL = proxyurl + `http://localhost:9000/`
+		// Vue.use(Cors)
+		axios.defaults.baseURL =`http://localhost:9000/`
 		// this.setHeader()
 	},
 

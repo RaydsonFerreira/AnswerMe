@@ -13,12 +13,20 @@
 
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
+import ConviteService from '@/services/conviteService'
 export default {
     name: 'iniciarJogo',
     mixins: [RouterMixin],
+    props: ["id_user"],
     methods: {
         iniciarJogo () {
+
             this.goTo('jogo')
+        }
+    },
+    computed: {
+        verificarStatus () {
+            ConviteService.verificarStatus('/convite/status/{id_envio}/', this.id_user)
         }
     }
 }

@@ -19,7 +19,7 @@
 
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
-import LoginService from '@/services/loginService'
+// import LoginService from '@/services/loginService'
 export default {
   name: 'MainWrapper',
   mixins: [RouterMixin],
@@ -38,16 +38,16 @@ export default {
         } else if (this.senha === '') {
             alert('Preencha a senha!')
         } else {
-            let usuario = {
-                username: this.username,
-                senha: this.senha
-            }
-            LoginService.login('loginUser', usuario).then((result) => {
-                alert(result)
-                this.goTo('dashboard') 
-            }).catch(() => {
-                alert('usuario não encontrado! Cadastre-se')
-            });
+            // let usuario = {
+            //     username: this.username,
+            //     senha: this.senha
+            // }
+            // LoginService.login('loginUser', usuario).then((result) => {
+            //     result.setHeader('Access-Control-Allow-Origin', '*')
+            this.goTo('dashboard') 
+            // }).catch(() => {
+            //     alert('usuario não encontrado! Cadastre-se')
+            // });
         }
     },
     registrar () {

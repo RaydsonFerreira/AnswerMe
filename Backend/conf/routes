@@ -19,7 +19,7 @@ POST    /amigo/{id_requerente}/{id_destino}     Amigos.addAmigo
 GET     /amigo/{id_requerente}                  Amigos.getAmigos
 
 # Convite
-POST    /convite/{id_envio}/{id_recibo}         Convites.convidar
+GET    /convite/{id_envio}/{id_recibo}          Convites.convidar
 GET     /convite/convites                       Convites.convites
 POST    /convite/aceitar/{id_envio}/{id_recibo} Convites.AceitarConvite
 POST    /convite/recusar/{id_envio}/{id_recibo} Convites.RecusarConvite

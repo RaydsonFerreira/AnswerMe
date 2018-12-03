@@ -21,9 +21,9 @@ export default {
     name: 'dashboard',
     mixins: [RouterMixin],
     methods: {
-        iniciarJogo () {
-            this.goTo('escolherAmigo')
-        },
+    iniciarJogo () {
+        this.goTo('escolherAmigo')
+    },
 	adicionarAmigo(){
             this.goTo('adicionarAmigo')
 	},

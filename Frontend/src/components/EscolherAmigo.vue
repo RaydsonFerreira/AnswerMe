@@ -13,10 +13,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">-</th>
-                    <td>-</td>
-                    <td><button type="submit" class="btn btn-outline-warning btn-default" @click="jogar">Jogar</button></td>
+                  <tr v-for = "(amigo, index) in amigos" :key = "index">
+                    <th scope="row">{{amigo.usuario2.username}}</th>
+                    <td>{{amigo.usuario2.nome}}</td>
+                    <td><button type="submit" class="btn btn-outline-warning btn-default" @click="jogar(amigo.usuario2.id)">Jogar</button></td>
                   </tr>
                 </tbody>
             </table>
@@ -25,13 +25,28 @@
 
 <script>
 import RouterMixin from '@/utils/mixins/RouterMixin'
+import AmigoService from '@/services/amigoService'
+import ConviteService from '@/services/conviteService'
 export default {
     name: 'escolherAmigo',
     mixins: [RouterMixin],
     methods: {
-        jogar () {
-            this.goTo('iniciarJogo')
-        },
+        jogar (id_user) {
+            ConviteService.convidar('convite/1', id_user).then(result => {
+                this.goTo('iniciarJogo')
+            })
+        }
+    },
+    mounted () {
+        AmigoService.getAmigos('amigo', 1).then((result) => {
+            console.log(result.data)
+            this.amigos = result.data
+        })
+    },
+    data () {
+        return{
+            amigos: []
+        }
     }
 }
 </script>
