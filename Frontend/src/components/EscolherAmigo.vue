@@ -67,6 +67,7 @@ export default {
     .subtitulo{
         margin-top: 40px;
         margin-bottom: 50px;
+        font-weight: 600;
     }
     .table{
         width: 700px;
