@@ -15,7 +15,7 @@ import play.db.jpa.GenericModel;
 @Entity
 public class Resposta extends GenericModel {
     @Id
-    @Column(name = "id_convite")
+    @Column(name = "id_resposta")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
@@ -23,16 +23,11 @@ public class Resposta extends GenericModel {
     @JoinColumn(name = "fk_id_usuario_Respondente",nullable=false)
     public Usuario usuarioRespondente;
 
-    @Column(name = "status")
+    @Column(name = "alternativa")
     public String alternativa;
 
-    @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "fk_id_pergunta",nullable=false)
-    public Pergunta pergunta;
-
-    public Resposta(Usuario usuarioRespondente, String alternativa, Pergunta pergunta) {
+    public Resposta(Usuario usuarioRespondente, String alternativa) {
         this.usuarioRespondente = usuarioRespondente;
         this.alternativa = alternativa;
-        this.pergunta = pergunta;
     }
 }
