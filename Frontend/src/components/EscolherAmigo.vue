@@ -16,12 +16,25 @@
                   <tr>
                     <th scope="row">-</th>
                     <td>-</td>
-                    <td><button type="submit" class="btn btn-outline-warning btn-default">Jogar</button></td>
+                    <td><button type="submit" class="btn btn-outline-warning btn-default" @click="jogar">Jogar</button></td>
                   </tr>
                 </tbody>
             </table>
         </div> 
 </template>
+
+<script>
+import RouterMixin from '@/utils/mixins/RouterMixin'
+export default {
+    name: 'escolherAmigo',
+    mixins: [RouterMixin],
+    methods: {
+        jogar () {
+            this.goTo('iniciarJogo')
+        },
+    }
+}
+</script>
 
 <style scoped>
     @font-face {
@@ -30,7 +43,7 @@
     }
     h1 {
         font-family: 'BD_Cartoon_Shout' !important;
-        font-size: 3em;
+        font-size: 4em;
         display: inline;
     }
     .titulo{
@@ -44,7 +57,13 @@
         width: 700px;
     }
     .thead{
-        background-color: yellow;
+        background-color: #FFC107;
         color: black;
+    }
+    .subtitulo, th,td,button{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    }
+    button{
+        font-weight: 600;
     }
 </style>

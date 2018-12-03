@@ -34,8 +34,15 @@
     }
     h1 {
         font-family: 'BD_Cartoon_Shout' !important;
-        font-size: 3em;
+        font-size: 4em;
         display: inline;
+    }
+    h2 {
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 20px !important;
+        margin-bottom: 25px;
     }
     .titulo{
         margin-bottom: 50px;
@@ -50,5 +57,8 @@
     .thead{
         background-color: yellow;
         color: black;
+    }
+    th,td{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
     }
 </style>

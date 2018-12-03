@@ -13,8 +13,6 @@
             <button class="btn btn-outline-warning btn-entrar" @click='logar'>Entrar</button>
             <button class="btn btn-outline-warning" @click='registrar'>Registrar-se</button>
         </form>
-
-        
     </div>
 </div>
 </template>
@@ -53,31 +51,37 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    font-family: 'Heroes Legend' !important;
-    font-size: 3em;
-    display: inline;
-}
 
-h2 {
-    font-family: Helvetica Neue, Helvetica, sans-serif !important;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 20px !important;
-    margin-bottom: 25px;
-}
+    @font-face {
+        font-family: 'BD_Cartoon_Shout';
+        src: url('~@/assets/fonts/BD_Cartoon_Shout.ttf');
+    }
+    
+    h1 {
+        font-family: 'BD_Cartoon_Shout' !important;
+        font-size: 4em;
+        display: inline;
+    }
 
-.caixaLogin{
-    width: 50vw;
-}
+    h2 {
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 20px !important;
+        margin-bottom: 25px;
+    }
 
-.btn-entrar{
-    margin-right: 30px 
-}
+    .caixaLogin{
+        width: 50vw;
+    }
 
-input,button{
-    font-family: Helvetica Neue, Helvetica, sans-serif !important;
-    font-weight: 600;
-}
+    .btn-entrar{
+        margin-right: 30px 
+    }
+
+    input,button{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-weight: 600;
+    }
 
 </style>

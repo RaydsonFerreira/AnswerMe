@@ -5,7 +5,7 @@
             <h1>ANSWER ME</h1>
         </div>
         <div class='col col-md-6'>
-            <p class='placarTitulo'>placar</p>
+            <p class='placarTitulo'>PLACAR</p>
             <p class='placar'>Raydson 1 x 1 Rafaela</p>
         </div>
 
@@ -66,28 +66,54 @@ export default {
 
   methods: {
       responder () {
-
+          this.goTo('resultado')
       }
   }
 }
 </script>
 
 <style scoped lang='sass'>
-/deep/ .btn 
-    margin-top: 20px !important
-    border-radius: 5px !important
+    /deep/ .btn 
+        margin-top: 20px !important
+        border-radius: 5px !important
 
-.resposta
-    margin-top: 40px
-    text-align: left
-    font-size: 0.8em
+    .resposta
+        margin-top: 40px
+        text-align: left
+        font-size: 0.8em
 
-.reposta1
-    margin-top: 25px !important
+    .reposta1
+        margin-top: 25px !important
 
 
-.align-left
-    width: 100%
-    text-align: right
+    .align-left
+        width: 100%
+        text-align: right
 
+    @font-face 
+        font-family: 'BD_Cartoon_Shout';
+        src: url('~@/assets/fonts/BD_Cartoon_Shout.ttf');
+    
+    h1 
+        font-family: 'BD_Cartoon_Shout' !important;
+        font-size: 3em;
+        display: inline;
+    
+    h2 
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 30px !important;
+        margin-bottom: 25px;
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+
+    .placarTitulo
+        font-size: 20px;
+        font-weight: 700;
+
+    p,h5,button
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    
+    button
+        font-weight: 600;
+    
 </style>

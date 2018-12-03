@@ -7,9 +7,22 @@
 
         <!-- Botão Iniciar Partida -->
         <!-- Quando clicado aparecer mensagem: "Esperando outro jogador..." -->
-        <button type="submit" class="btn btn-lg btn-outline-warning btn-default">Iniciar Partida</button>
+        <button type="submit" class="btn btn-lg btn-outline-warning btn-default" @click="iniciarJogo">Iniciar Partida</button>
     </div>
 </template>
+
+<script>
+import RouterMixin from '@/utils/mixins/RouterMixin'
+export default {
+    name: 'iniciarJogo',
+    mixins: [RouterMixin],
+    methods: {
+        iniciarJogo () {
+            this.goTo('jogo')
+        }
+    }
+}
+</script>
 
 <style scoped>
     @font-face {
@@ -18,7 +31,7 @@
     }
     h1 {
         font-family: 'BD_Cartoon_Shout' !important;
-        font-size: 3em;
+        font-size: 4em;
         display: inline;
     }
     .titulo{
@@ -27,15 +40,14 @@
     .subtitulo{
         margin-top: 40px;
         margin-bottom: 50px;
-    }
-    .table{
-        width: 700px;
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
     }
     .thead{
         background-color: yellow;
         color: black;
     }
     button{
-        font-family: 'BD_Cartoon_Shout' !important;
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-weight: 600;
     }
 </style>

@@ -19,10 +19,10 @@ export default {
 <style>
 #app {
   @font-face {
-     font-family: 'Heroes Legend';
+     font-family: 'BD_Cartoon_Shout' !important;
      src: url('assets/fonts/Heroes Legend.ttf') format('ttf');
   }
-  font-family: 'Heroes Legend' !important;
+  font-family: 'BD_Cartoon_Shout' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

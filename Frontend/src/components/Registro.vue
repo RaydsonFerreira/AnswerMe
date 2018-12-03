@@ -42,9 +42,9 @@ export default {
   methods: {
     registrar () {
         if (!this.nome && !this.username && !this.senha && !this.confirmacaoSenha) {
-            alert('preencha os campos')
+            alert('Preencha os campos!')
         } else if(this.senha !== this.confirmacaoSenha) {
-            alert('senhas não conferem! digite novamente')
+            alert('Senhas não conferem! Digite novamente!')
         } else {
             //chamr servico de registro
             alert('Registro feito com sucesso!')
@@ -56,17 +56,34 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    font-family: 'Heroes Legend' !important;
-    font-size: 3em;
-    display: inline;
-}
+    @font-face {
+        font-family: 'BD_Cartoon_Shout';
+        src: url('~@/assets/fonts/BD_Cartoon_Shout.ttf');
+    }
+    h1 {
+        font-family: 'BD_Cartoon_Shout' !important;
+        font-size: 3em;
+        display: inline;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 30px !important;
+        margin-bottom: 25px;
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    }
 
-.caixaRegistro{
-    width: 50vw;
-}
+    .caixaRegistro{
+        width: 50vw;
+    }
 
-.btn-entrar{
-    margin-right: 30px 
-}
+    .btn{
+        margin-right: 30px;
+        font-size: 18px; 
+    }
+    
+    input,button{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-weight: 600;
+    }
 </style>

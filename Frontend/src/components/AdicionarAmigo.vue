@@ -13,12 +13,25 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-1 col-sm-10">
-                    <button type="submit" class="btn btn-lg btn-outline-warning btn-default">Procurar</button>
+                    <button type="submit" class="btn btn-lg btn-outline-warning btn-default" @click="paginaInicial">Adicionar</button>
                 </div>
             </div>
         </form>
     </div>
 </template>
+
+<script>
+import RouterMixin from '@/utils/mixins/RouterMixin'
+export default {
+    name: 'adicionarAmigo',
+    mixins: [RouterMixin],
+    methods: {
+        paginaInicial () {
+            this.goTo('dashboard')
+        },
+    }
+}
+</script>
 
 <style scoped>
     @font-face {
@@ -30,8 +43,14 @@
         font-size: 3em;
         display: inline;
     }
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 30px !important;
+        margin-bottom: 25px;
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+    }
     .btn-lg{
-        font-family: 'BD_Cartoon_Shout' !important;
         margin-top: 15px;
     }
     .titulo{
@@ -45,5 +64,9 @@
     .subtitulo{
         margin-top: 40px;
         margin-bottom: 50px;
+    }
+    input,button,label{
+        font-family: Helvetica Neue, Helvetica, sans-serif !important;
+        font-weight: 600;
     }
 </style>
