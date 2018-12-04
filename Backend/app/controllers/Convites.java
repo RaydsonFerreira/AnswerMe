@@ -75,17 +75,17 @@ public class Convites extends InternalController {
     }
 
     public static void getStatusConvite(int id_envio, int id_recibo){
-        Convite c = (Convite) JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo, Convite.class).getSingleResult();
-        Http.Header hd = new Http.Header();
-        hd.name = "Access-Control-Allow-Origin";
-        hd.values = new ArrayList<String>();
-        hd.values.add("http://192.168.43.163:8080");
-        Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
-        new Thread() {
 
-            @Override
-            public void run() {
-                
+//        new Thread() {
+
+//            @Override
+//            public void run() {
+                Convite c = new Convite();
+//                try {
+                c = (Convite) JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo, Convite.class).getSingleResult();
+//                }catch(Exception e){
+
+//                }
                 while (!c.status.equals("Aprovado")){
                     try {
                         Thread.sleep(2000);
@@ -93,17 +93,27 @@ public class Convites extends InternalController {
                     } catch (Exception e) {
                         System.out.println(e);
                     }
-                    if ((JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo + " AND c.status = 'Aceito'", Convite.class).getResultList()).size() > 0) {
+                    int a = 0;
+//                    try{
+                        a = (JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo + " AND c.status = 'Aceito'", Convite.class).getResultList()).size();
+//                    }catch(Exception e){
+//
+//                    }
+                    if (a > 0) {
                         break;
                     }
         //            c = (Convite) JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo, Convite.class).getSingleResult();
                     System.out.println(c.status);
                 }
 
-                System.out.println("já saiu");
-
+//                System.out.println("já saiu");
+                Http.Header hd = new Http.Header();
+                hd.name = "Access-Control-Allow-Origin";
+                hd.values = new ArrayList<String>();
+                hd.values.add("http://192.168.43.163:8080");
+                Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
                 renderJSON(new Mensagem("ok"));
-            }
-        }.start();
+//            }
+//        }.start();
     }
 }

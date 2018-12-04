@@ -43,7 +43,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 1">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 2</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta2.pergunta.questao}}
@@ -77,7 +77,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 2">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 3</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta3.pergunta.questao}}
@@ -111,7 +111,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 3">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 4</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta4.pergunta.questao}}
@@ -145,7 +145,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 4">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 5</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta5.pergunta.questao}}

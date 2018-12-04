@@ -39,4 +39,8 @@ public class Convite extends GenericModel {
         this.status = status;
         this.dataDoConvite = new Date();
     }
+
+    public Convite(){
+
+    }
 }
