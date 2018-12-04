@@ -49,14 +49,19 @@ export default {
             UsuarioService.getUsuarios("usuarios").then((result) => {
                 console.log(result.data)
               let usuarios = result.data
+              let auxbool = false
               usuarios.forEach(element => {
                 if(element.username === this.username) {
                     localStorage.id_usuario = element.id
                     localStorage.nome_usuario = element.nome
                     localStorage.username_usuario = element.username
+                    auxbool = true
                     this.goTo('dashboard')
                 }                  
-              });  
+              });
+              if(!auxbool){
+                  alert("usuario não cadastrado")
+              }  
             })
             // this.goTo('dashboard')
             // }).catch(() => {

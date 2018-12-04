@@ -10,7 +10,7 @@ const ApiService = {
 	init () {
 		Vue.use(VueAxios, axios)
 		// Vue.use(Cors)
-		axios.defaults.baseURL ='http://localhost:9000/'
+		axios.defaults.baseURL ='http://192.168.43.163:9000/'
 		this.setHeader()
 	},
 

@@ -48,11 +48,11 @@ export default {
         } else if(this.senha !== this.confirmacaoSenha) {
             alert('Senhas não conferem! Digite novamente!')
         } else {
-            let usuario = {
-                nome: this.nome,
-                username: this.username,
-                senha: this.senha
-            }
+            // let usuario = {
+            //     nome: this.nome,
+            //     username: this.username,
+            //     senha: this.senha
+            // }
             UsuarioService.addUsuario(`usuario/${this.nome}/${this.username}/${this.senha}`).then(() => {
                 alert('Registro feito com sucesso!')
                 this.goToLogin()    

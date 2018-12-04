@@ -36,7 +36,7 @@ public class Jogos extends InternalController {
         Http.Header hd = new Http.Header();
         hd.name = "Access-Control-Allow-Origin";
         hd.values = new ArrayList<String>();
-        hd.values.add("http://localhost:8080");
+        hd.values.add("http://192.168.43.1633.163:8080");
         Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
 
         renderJSON(jogo);
@@ -70,7 +70,7 @@ public class Jogos extends InternalController {
         Http.Header hd = new Http.Header();
         hd.name = "Access-Control-Allow-Origin";
         hd.values = new ArrayList<String>();
-        hd.values.add("http://localhost:8080");
+        hd.values.add("http://192.168.43.163:8080");
         Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
 
         return perguntasSelecionadas;
@@ -84,14 +84,14 @@ public class Jogos extends InternalController {
             Http.Header hd = new Http.Header();
             hd.name = "Access-Control-Allow-Origin";
             hd.values = new ArrayList<String>();
-            hd.values.add("http://localhost:8080");
+            hd.values.add("http://192.168.43.163:8080");
             Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(jogo);
         } catch (Exception e) {
             Http.Header hd = new Http.Header();
             hd.name = "Access-Control-Allow-Origin";
             hd.values = new ArrayList<String>();
-            hd.values.add("http://localhost:8080");
+            hd.values.add("http://192.168.43.163:8080");
             Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(new Mensagem("jogo ainda não criado!"));
         }
