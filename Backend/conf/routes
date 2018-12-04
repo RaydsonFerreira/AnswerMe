@@ -22,9 +22,9 @@ GET     /amigo/{id_requerente}                       Amigos.getAmigos
 # Convite
 GET     /convite/{id_envio}/{id_recibo}          Convites.convidar
 GET     /convite/{id}                            Convites.convites
-POST    /convite/aceitar/{id_envio}/{id_recibo} Convites.AceitarConvite
-POST    /convite/recusar/{id_envio}/{id_recibo} Convites.RecusarConvite
-POST    /convite/cancelar/{id_envio}/{id_recibo} Convites.CancelarConvite
+GET    /convite/aceitar/{id_envio}/{id_recibo} Convites.AceitarConvite
+GET    /convite/recusar/{id_envio}/{id_recibo} Convites.RecusarConvite
+GET    /convite/cancelar/{id_envio}/{id_recibo} Convites.CancelarConvite
 GET     /convite/status/{id_envio}/{id_recibo}  Convites.getStatusConvite
 
 #jogo
@@ -32,5 +32,5 @@ GET     /jogo/{id_envio}/{id_recibo}                                Jogos.novoJo
 GET     /jogo/getJogo/{id_envio}/{id_recibo}                        Jogos.getJogo
 GET     /jogo/finalizar/{id_jogo}                                   Jogos.finalizar
 GET     /jogo/monitorar                                             Jogos.monitorar
-POST    /jogo/responder/{id_jogo}/{id_user}/{id_pergunta_resposta}  Jogos.responder
+GET    /jogo/responder/{id_jogo}/{id_user}/{id_pergunta_resposta}/{alternativa}  Jogos.responder
 

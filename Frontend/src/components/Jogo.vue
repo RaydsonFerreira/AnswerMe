@@ -189,8 +189,14 @@ export default {
   mixins: [RouterMixin],
 
   mounted () {
-      JogoService.getJogo('jogo/getJogo/1', 3).then((result) => {
-        this.jogo = result.data  
+      JogoService.getJogo(`jogo/getJogo/${localStorage.id_usuario}/${localStorage.id_amigo}`).then((result) => {
+        if(result.data.texto === "jogo ainda não criado!") {
+            JogoService.getJogo(`jogo/getJogo/${localStorage.id_amigo}/${localStorage.id_usuario}`).then((result) => {
+                this.jogo = result.data
+            })
+        } else {
+            this.jogo = result.data
+        }  
       })
   },
 
@@ -217,8 +223,13 @@ export default {
 
   methods: {
       responder (pr_id, alternativa) {
-          JogoService.responder(`jogo/responder/${this.jogo.id}/1/${pr_id}/${alternativa}`)
-          this.questao = this.questao + 1
+          console.log('alternativa', alternativa)
+            if(!alternativa == '') {
+                JogoService.responder(`jogo/responder/${this.jogo.id}/${localStorage.id_usuario}/${pr_id}/${alternativa}`)
+                this.questao = this.questao + 1
+            } else {
+                alert('selecione uma alternativa!')
+            }
       },
 
       finalizar (pr_id, alternativa) {

@@ -33,6 +33,12 @@ public class Jogos extends InternalController {
 
         jogo.save();
 
+        Http.Header hd = new Http.Header();
+        hd.name = "Access-Control-Allow-Origin";
+        hd.values = new ArrayList<String>();
+        hd.values.add("http://localhost:8080");
+        Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
+
         renderJSON(jogo);
     }
 
@@ -61,6 +67,12 @@ public class Jogos extends InternalController {
             perguntasSelecionadas.add(perguntas.get(posicoes.get(i)));
         }
 
+        Http.Header hd = new Http.Header();
+        hd.name = "Access-Control-Allow-Origin";
+        hd.values = new ArrayList<String>();
+        hd.values.add("http://localhost:8080");
+        Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
+
         return perguntasSelecionadas;
     }
 
@@ -69,8 +81,18 @@ public class Jogos extends InternalController {
             Jogo jogo = (Jogo) JPA.em().createNativeQuery("SELECT * from Jogo j WHERE j.fk_id_usuario_envio = " + id_envio + " AND j.fk_id_usuario_recibo = " + id_recibo + " AND j.fl_ativo = true", Jogo.class).getSingleResult();
             System.out.println(jogo.id);
 //            int a = JPA.em().createNativeQuery("UPDATE jogo SET fl_ativo = false WHERE id_jogo = " + jogo.id, Jogo.class).executeUpdate();
+            Http.Header hd = new Http.Header();
+            hd.name = "Access-Control-Allow-Origin";
+            hd.values = new ArrayList<String>();
+            hd.values.add("http://localhost:8080");
+            Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(jogo);
         } catch (Exception e) {
+            Http.Header hd = new Http.Header();
+            hd.name = "Access-Control-Allow-Origin";
+            hd.values = new ArrayList<String>();
+            hd.values.add("http://localhost:8080");
+            Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(new Mensagem("jogo ainda não criado!"));
         }
     }

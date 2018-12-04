@@ -2,35 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a10f855-0c4f-4fc2-a007-9aa7c700035a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Answerme.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Answerme.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Amigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Amigos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Jogos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Jogos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Amigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Amigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Achego.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Achego.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_500.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Amigos" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Amigos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Convites" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Convites" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.GenericController" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.GenericController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.InternalController" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.InternalController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Jogos" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Jogos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Login" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Login" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Perguntas" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Perguntas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Usuarios" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Usuarios" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Amigo" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Amigo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Convite" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Convite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Criptografia" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Criptografia" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Jogo" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Jogo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Mensagem" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Mensagem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Pergunta" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Pergunta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.PerguntaResposta" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.PerguntaResposta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Resposta" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Resposta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Usuario" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Usuario" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.AmigoSerializar" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.AmigoSerializar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.ConviteSerializar" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.ConviteSerializar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.PerguntasSerializar" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.PerguntasSerializar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.UsuariosSerializar" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/serializers.UsuariosSerializar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.Configuracoes" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.Configuracoes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.Mensagens" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.Mensagens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.json.SerializerUtil" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/utils.json.SerializerUtil" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Amigos.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Amigos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Convites.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Convites.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/GenericController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/GenericController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Jogos.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Jogos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Perguntas.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Perguntas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Usuarios.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/models/Amigo.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Amigo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/AdicionarAmigo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/AdicionarAmigo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Convites.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/Convites.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Convite.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Convite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Criptografia.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Criptografia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Jogo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Mensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Mensagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Pergunta.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Pergunta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/PerguntaResposta.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/PerguntaResposta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Resposta.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Resposta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/utils/Mensagens.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/utils/Mensagens.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/utils/json/SerializerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/utils/json/SerializerUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/components/EscolherAmigo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/EscolherAmigo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/components/IniciarJogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/IniciarJogo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Jogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/Jogo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/Registro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/Registro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/services/amigoService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/services/amigoService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/services/api/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/services/api/apiService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/services/conviteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/services/conviteService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/services/filmesService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/services/loginService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/services/loginService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/services/usuarioService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/services/usuarioService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tmp/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,31 +122,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state>
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Jogos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="87" column="18" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="Usuarios.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Usuarios.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="445">
               <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -124,33 +143,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="380">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Criptografia.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Criptografia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="608">
               <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="messages" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/messages">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Amigos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Amigos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="228">
               <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Amigo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Amigo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="247">
               <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,10 +190,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Convite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Convite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="323">
               <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -183,10 +202,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Convites.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Convites.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1178">
               <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -203,7 +222,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -238,10 +257,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="630" />
-    <option name="height" value="695" />
+    <option name="x" value="1440" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -262,10 +285,13 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -294,15 +320,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543885030210" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Answerme.ipr" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,6 +339,49 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -331,43 +398,43 @@
       <workItem from="1543797712371" duration="11005000" />
       <workItem from="1543855096328" duration="13016000" />
       <workItem from="1543889747307" duration="5529000" />
+      <workItem from="1543926092858" duration="85000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72873000" />
+    <option name="totallyTimeSpent" value="72958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="1440" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2659091" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.15660685" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.1563786" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="0" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.265625" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,13 +444,94 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Jogos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Criptografia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/messages">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Amigos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Amigo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Convite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Convites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Usuarios.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Achego.ipr">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Achego.iws">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Answerme.ipr">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
@@ -495,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Jogos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
+        <state relative-caret-position="1425">
           <caret line="87" column="18" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -505,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Criptografia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="608">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
@@ -515,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Amigo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="247">
           <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -525,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Amigos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="228">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -535,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Convite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="323">
           <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -545,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Convites.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1178">
           <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -555,21 +703,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state>
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="380">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Answerme.ipr">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Usuarios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="445">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />

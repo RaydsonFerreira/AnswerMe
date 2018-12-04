@@ -33,7 +33,7 @@ export default {
         },
         getStatus () {
             console.log("HIRI")
-            ConviteService.verificarStatus(`convite/status/${localStorage.id_usuario}/2`).then(() => {
+            ConviteService.verificarStatus(`convite/status/${localStorage.id_usuario}/${localStorage.id_amigo}`).then(() => {
                 this.goTo('jogo')
             })
         },

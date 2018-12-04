@@ -33,12 +33,13 @@ export default {
     methods: {
         jogar (id_user) {
             ConviteService.convidar(`convite/${localStorage.id_usuario}`, id_user).then(result => {
+                localStorage.id_amigo = id_user;
                 this.goTo('iniciarJogo')
             })
         }
     },
     mounted () {
-        AmigoService.getAmigos('amigo', 1).then((result) => {
+        AmigoService.getAmigos('amigo', localStorage.id_usuario).then((result) => {
             console.log(result.data)
             this.amigos = result.data
         })
