@@ -10,8 +10,15 @@ const ApiService = {
 	init () {
 		Vue.use(VueAxios, axios)
 		// Vue.use(Cors)
-		axios.defaults.baseURL =`http://localhost:9000/`
-		// this.setHeader()
+		axios.defaults.baseURL =`https://cors-anywhere.herokuapp.com/http://192.168.43.163:9000/`
+		this.setHeader()
+	},
+
+	setHeader () {
+		Vue.axios.defaults.headers.post['Content-Type'] = 'application/json'
+		Vue.axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
+		Vue.axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
+		Vue.axios.defaults.headers.post['Accept'] = 'application/json'
 	},
 
 	async get (resource, slug = '') {

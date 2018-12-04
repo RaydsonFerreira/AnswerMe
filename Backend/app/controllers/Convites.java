@@ -4,6 +4,7 @@ import java.util.List;
 
 import java.security.MessageDigest;
 
+
 import static serializers.ConviteSerializar.findByStatusSerializer;
 
 import models.*;
@@ -28,8 +29,8 @@ public class Convites extends InternalController {
         renderJSON(m);
     }
 
-    public static void convites(){
-        List<Convite> c = JPA.em().createNativeQuery("SELECT * from Convite c", Convite.class).getResultList();
+    public static void convites(int id){
+        List<Convite> c = JPA.em().createNativeQuery("SELECT * from Convite c WHERE c.status = 'Aguardando' AND c.fk_id_usuario_recibo = " + id, Convite.class).getResultList();
         renderJSON(c);
     }
 
@@ -54,6 +55,22 @@ public class Convites extends InternalController {
     public static void getStatusConvite(int id_envio, int id_recibo){
         Convite c = (Convite) JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo, Convite.class).getSingleResult();
 
-        renderJSON(findByStatusSerializer.serialize(c));
+        while (!c.status.equals("Aprovado")){
+            try {
+                Thread.sleep(3000);
+                System.out.println("teste");
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            if ((JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo + " AND c.status = 'Aprovado'", Convite.class).getResultList()).size() > 0) {
+                break;
+            }
+//            c = (Convite) JPA.em().createNativeQuery("SELECT * FROM Convite c WHERE c.fk_id_usuario_envio = " + id_envio + " AND c.fk_id_usuario_recibo = " + id_recibo, Convite.class).getSingleResult();
+            System.out.println(c.status);
+        }
+
+        System.out.println("já saiu");
+
+        renderJSON(new Mensagem("ok"));
     }
 }

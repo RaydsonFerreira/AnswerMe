@@ -24,8 +24,8 @@ public class Usuarios extends InternalController {
         renderJSON(ues);
     }
 
-    public static void postUsuario(){
-        Usuario usuario = getBody(Usuario.class);
+    public static void postUsuario(String nome, String username, String senha){
+        Usuario usuario = new Usuario(nome, username, senha);
 
         Criptografia c = new Criptografia();
         usuario.senha = c.gerarHash(usuario.senha, usuario.senha);

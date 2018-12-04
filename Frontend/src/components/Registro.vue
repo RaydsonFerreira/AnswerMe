@@ -53,9 +53,13 @@ export default {
                 username: this.username,
                 senha: this.senha
             }
-            UsuarioService.addUsuario('usuario', usuario)
-            alert('Registro feito com sucesso!')
-            this.goToLogin()
+            UsuarioService.addUsuario(`usuario/${this.nome}/${this.username}/${this.senha}`).then(() => {
+                alert('Registro feito com sucesso!')
+                this.goToLogin()    
+            }).catch((err) => {
+                alert(err)
+            });
+            
         }
     }
   }

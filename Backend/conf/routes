@@ -7,27 +7,28 @@
 # Usuarios
 GET     /usuario/{id_usuario}                   Usuarios.getUsuario
 GET     /usuarios                               Usuarios.getUsuarios
-POST    /usuario                                Usuarios.postUsuario
+GET    /usuario/{nome}/{username}/{senha}       Usuarios.postUsuario
 
 # Perguntas
 GET     /perguntas                              Perguntas.getPerguntas
 # Login
 POST    /loginUser                              Login.loginUser
+POST    /test                                   Login.test
 
 # Amigo
-POST    /amigo/{id_requerente}/{id_destino}     Amigos.addAmigo
-GET     /amigo/{id_requerente}                  Amigos.getAmigos
+GET     /amigo/{id_requerente}/{username_destino}    Amigos.addAmigo
+GET     /amigo/{id_requerente}                       Amigos.getAmigos
 
 # Convite
-GET    /convite/{id_envio}/{id_recibo}          Convites.convidar
-GET     /convite/convites                       Convites.convites
+GET     /convite/{id_envio}/{id_recibo}          Convites.convidar
+GET     /convite/{id}                            Convites.convites
 POST    /convite/aceitar/{id_envio}/{id_recibo} Convites.AceitarConvite
 POST    /convite/recusar/{id_envio}/{id_recibo} Convites.RecusarConvite
 POST    /convite/cancelar/{id_envio}/{id_recibo} Convites.CancelarConvite
 GET     /convite/status/{id_envio}/{id_recibo}  Convites.getStatusConvite
 
 #jogo
-POST    /jogo/{id_envio}/{id_recibo}                                Jogos.novoJogo
+GET     /jogo/{id_envio}/{id_recibo}                                Jogos.novoJogo
 GET     /jogo/getJogo/{id_envio}/{id_recibo}                        Jogos.getJogo
 GET     /jogo/finalizar/{id_jogo}                                   Jogos.finalizar
 GET     /jogo/monitorar                                             Jogos.monitorar
