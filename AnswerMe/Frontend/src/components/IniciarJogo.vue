@@ -3,7 +3,7 @@
         <h1 class='titulo'>ANSWER ME</h1>
 
         <!-- Pegar do BD -->
-        <h2 class='subtitulo'>Aguardando Seu amigo aceitar o convite</h2>
+        <h2 class='subtitulo'>{{verificarStatus()}} Aguardando Seu amigo aceitar o convite</h2>
 
         <!-- Botão Iniciar Partida -->
         <!-- Quando clicado aparecer mensagem: "Esperando outro jogador..." -->
@@ -18,7 +18,6 @@ import JogoService from '@/services/jogoService'
 export default {
     name: 'iniciarJogo',
     mixins: [RouterMixin],
-    props: ["id_user"],
     data () {
         return {
             status: ''
@@ -33,20 +32,19 @@ export default {
             // });
         },
         getStatus () {
-            ConviteService.verificarStatus(`/convite/status/${localStorage.id_usuario}/${this.id_user}`).then((result) => {
-                this.status = result.data.status
+            console.log("HIRI")
+            ConviteService.verificarStatus(`convite/status/${localStorage.id_usuario}/${localStorage.id_amigo}`).then(() => {
+                this.goTo('jogo')
             })
+        },
+
+        verificarStatus () {
+            console.log("AQUI")
+            this.getStatus()
         }
     },
-    mounted: {
-        verificarStatus () {
-            getStatus()
-            while(this.status === 'aguardando') {
-                window.setTimeout(getStatus(), 5000)
-                console.log('TESTEEE')
-            }
+    updated: {
         
-        }
     }
 }
 </script>

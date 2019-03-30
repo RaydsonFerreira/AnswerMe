@@ -30,6 +30,3 @@ VALUES(1,'C. S. Lewis','Lewis Carroll','J.R.R. Tolkien','b','William Shakespeare
 (28,'José Raul Capaclanca','Alexander Alekhine','Garry Kasparov','d','Wilhelm Steinitz','Quem foi o primeiro campeão de xadrez do mundo?'),
 (29,'Apolo','Ares','Dioniso','c','Hermes','Qual o nome do deus do vinho na mitologia grega? '),
 (30,'Montanha Sombria','Montanha da Névoa','Condado','d','Erebor','No filme “Hobbit”, qual o nome da montanha a qual Smaug dominou?');
-
-
-

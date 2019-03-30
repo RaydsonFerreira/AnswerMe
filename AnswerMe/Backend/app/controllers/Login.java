@@ -22,9 +22,19 @@ public class Login extends InternalController {
         try {
             Usuario user = (Usuario) JPA.em().createNativeQuery("SELECT * from Usuario u WHERE u.usr_usuario = '" + usuario.username + "' AND u.senha_usuario = '" + usuario.senha + "'", Usuario.class).getSingleResult();
             Mensagem m = new Mensagem("Usuario Encontrado!!!");
+            Http.Header hd = new Http.Header();
+            hd.name = "Access-Control-Allow-Origin";
+            hd.values = new ArrayList<String>();
+            hd.values.add("http://192.168.43.163:8080");
+            Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(m);
         } catch (Exception e) {
             Mensagem m = new Mensagem("Usuario não Encontrado!!!");
+            Http.Header hd = new Http.Header();
+            hd.name = "Access-Control-Allow-Origin";
+            hd.values = new ArrayList<String>();
+            hd.values.add("http://192.168.43.163:8080");
+            Http.Response.current().headers.put("Access-Control-Allow-Origin",hd);
             renderJSON(m);
         }
     }

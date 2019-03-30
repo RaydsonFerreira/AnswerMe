@@ -43,19 +43,27 @@ export default {
             //     username: this.username,
             //     senha: this.senha
             // }
-            // LoginService.login('test', 'usuario').then((result) => {
+            // LoginService.login('loginUsuario', 'usuario').then((result) => {
             //     alert(result.data)
+            console.log("SUPIMPA")
             UsuarioService.getUsuarios("usuarios").then((result) => {
+                console.log(result.data)
               let usuarios = result.data
+              let auxbool = false
               usuarios.forEach(element => {
                 if(element.username === this.username) {
                     localStorage.id_usuario = element.id
                     localStorage.nome_usuario = element.nome
                     localStorage.username_usuario = element.username
+                    auxbool = true
+                    this.goTo('dashboard')
                 }                  
-              });  
+              });
+              if(!auxbool){
+                  alert("usuario não cadastrado")
+              }  
             })
-            this.goTo('dashboard')
+            // this.goTo('dashboard')
             // }).catch(() => {
             //     alert('usuario não encontrado! Cadastre-se')
             // });

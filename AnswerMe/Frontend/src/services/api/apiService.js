@@ -10,12 +10,12 @@ const ApiService = {
 	init () {
 		Vue.use(VueAxios, axios)
 		// Vue.use(Cors)
-		axios.defaults.baseURL =`http://192.168.43.163:9000/`
+		axios.defaults.baseURL ='http://192.168.43.163:9000/'
 		this.setHeader()
 	},
 
 	setHeader () {
-		Vue.axios.defaults.headers.post['Content-Type'] = 'application/json'
+		Vue.axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 		Vue.axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
 		Vue.axios.defaults.headers.post['Accept'] = 'application/json'
 	},

@@ -16,7 +16,7 @@
                   <tr v-for="(convite, index) in convites" :key="index">
                     <th scope="row">{{convite.usuarioEnvio.username}}</th>
                     <td>{{convite.usuarioEnvio.nome}}</td>
-                    <td><button type="submit" class="btn btn-outline-warning btn-default">Jogar</button></td>
+                    <td><button @click="aceitar(convite.usuarioEnvio.id)" type="submit" class="btn btn-outline-warning btn-default">Jogar</button></td>
                   </tr>
                 </tbody>
             </table>
@@ -26,12 +26,27 @@
 
 <script>
 import ConviteService from '@/services/conviteService'
+import JogoService from '@/services/jogoService'
+import RouterMixin from '@/utils/mixins/RouterMixin'
+
 export default {
     name: 'Convites',
+    mixins: [RouterMixin],
 
     data () {
         return{
             convites: []
+        }
+    },
+
+    methods: {
+        aceitar (id) {
+            localStorage.id_amigo = id
+            ConviteService.aceitar(`convite/aceitar/${id}/${localStorage.id_usuario}`).then((result) => {
+                JogoService.novoJogo(`jogo/${id}/${localStorage.id_usuario}`).then((result) => {
+                    this.goTo('jogo')
+                })
+            })
         }
     },
 

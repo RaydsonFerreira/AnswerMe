@@ -43,7 +43,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 1">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 2</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta2.pergunta.questao}}
@@ -77,7 +77,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 2">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 3</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta3.pergunta.questao}}
@@ -111,7 +111,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 3">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 4</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta4.pergunta.questao}}
@@ -145,7 +145,7 @@
         </template>
 
         <div class="perguntas" v-if="questao === 4">
-            <h5>Pergunta 1</h5>
+            <h5>Pergunta 5</h5>
             <div class='pergunta'>
                 <p>
                     {{jogo.perguntaResposta5.pergunta.questao}}
@@ -189,8 +189,14 @@ export default {
   mixins: [RouterMixin],
 
   mounted () {
-      JogoService.getJogo('jogo/getJogo/1', 3).then((result) => {
-        this.jogo = result.data  
+      JogoService.getJogo(`jogo/getJogo/${localStorage.id_usuario}/${localStorage.id_amigo}`).then((result) => {
+        if(result.data.texto === "jogo ainda não criado!") {
+            JogoService.getJogo(`jogo/getJogo/${localStorage.id_amigo}/${localStorage.id_usuario}`).then((result) => {
+                this.jogo = result.data
+            })
+        } else {
+            this.jogo = result.data
+        }  
       })
   },
 
@@ -217,8 +223,13 @@ export default {
 
   methods: {
       responder (pr_id, alternativa) {
-          JogoService.responder(`jogo/responder/${this.jogo.id}/1/${pr_id}/${alternativa}`)
-          this.questao = this.questao + 1
+          console.log('alternativa', alternativa)
+            if(!alternativa == '') {
+                JogoService.responder(`jogo/responder/${this.jogo.id}/${localStorage.id_usuario}/${pr_id}/${alternativa}`)
+                this.questao = this.questao + 1
+            } else {
+                alert('selecione uma alternativa!')
+            }
       },
 
       finalizar (pr_id, alternativa) {
